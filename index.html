@@ -1,10 +1,165 @@
 <!DOCTYPE html>
 <html>
 
-<head></head>
+<head>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 
-<body>
-    <h1>Welcome to Dnkm's website</h1>
+    <!-- waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <!-- my own -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="loading">
+
+    <div class="container-fluid">
+
+        <!-- nav start -->
+        <div class="row">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                        <a class="navbar-brand" href="#">Brand</a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">One more separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-left">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Something else here</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <!-- // nav end -->
+
+        <!-- bio -->
+        <div class="row">
+            <section class="jumbotron">
+                <h1>Hello, world!</h1>
+                <p>Welcome to my website</p>
+                <p><a class="btn btn-primary btn-lg" role="button" onclick="scrollPage()">Learn more</a></p>
+            </section>
+        </div>
+        <!-- // bio -->
+
+        <div class="container">
+
+
+            <!-- my works -->
+            <section class="panel panel-default">
+                <div class="panel-heading">My Works</div>
+                <div class="panel-body">
+
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="https://unsplash.it/240/200?random" />
+                                <div class="caption">
+                                    <h3>Space Invaders Game</h3>
+                                    <p>A popular game from the 1960s implemented in html, css and javascript</p>
+                                    <p>
+                                        <a class="btn btn-primary">Demo</a>
+                                        <a class="btn btn-default">Source</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="https://unsplash.it/240/200?random" />
+                                <div class="caption">
+                                    <h3>Space Invaders Game</h3>
+                                    <p>A popular game from the 1960s implemented in html, css and javascript</p>
+                                    <p>
+                                        <a class="btn btn-primary">Demo</a>
+                                        <a class="btn btn-default">Source</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-md-4">
+                            <div class="thumbnail">
+                                <img src="https://unsplash.it/240/200?random" />
+                                <div class="caption">
+                                    <h3>Space Invaders Game</h3>
+                                    <p>A popular game from the 1960s implemented in html, css and javascript</p>
+                                    <p>
+                                        <a class="btn btn-primary">Demo</a>
+                                        <a class="btn btn-default">Source</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!-- // my works -->
+
+            <!-- test -->
+            <section class="panel panel-default" id="test">
+                <span class="glyphicon glyphicon-send" id="testImg"></span>
+            </section>
+            <!-- // test -->
+
+            <div style="height: 800px"></div>
+        </div>
+
+    </div>
+
 </body>
 
 </html>

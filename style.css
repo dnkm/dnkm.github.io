@@ -1,0 +1,35 @@
+.loading {
+    background: url('https://loading.io/spinners/color-bar/index.colorful-progress-loader.gif') no-repeat top center;
+}
+
+body > .container-fluid,
+body > .container-fluid > .container {
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+body > .container-fluid > .container {
+    transition-delay: 1s;
+}
+
+body.loaded > .container-fluid, 
+body.loaded > .container-fluid > .container {
+    opacity: 1;
+}
+
+#test {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#testImg {
+    font-size: 100px;
+    transform: rotate(0deg);
+    transition: 3s;
+}
+
+#testImg.rotated {
+    transform: rotate(360deg)
+}
